@@ -13,7 +13,7 @@ $small: max-width 767px;
 @import 'social-buttons';
 @import 'breakpoint';
 
-$cone-size: 400;
+$cone-size: 500;
 
 /*
  * Globals
@@ -113,14 +113,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background: $green;  
   font-family: 'Lato', sans-serif;
 }
 body {
-  color: #fff;
+  color: #151515;
   text-align: center;
-  //text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  
 }
 
 
@@ -218,11 +216,13 @@ body {
  */
  
  .header-trapezoid {
-  border-style: solid;
-  border-color: transparent transparent $green transparent;
-  border-width: 0 #{$cone-size}px #{$cone-size}px #{$cone-size}px;
-  background-color: $dark-green;
-}
+   @include breakpoint($medium) {
+    border-style: solid;
+    border-color: transparent transparent $green transparent;
+    border-width: 0 #{$cone-size}px #{$cone-size}px #{$cone-size}px;
+    background-color: $dark-green;
+    }
+  }
 
  .jumbotron img {
   width: 100%;
@@ -271,9 +271,6 @@ body {
     
   }
 
-  
-
-
   .cta {
     @extend %button;
   }
@@ -310,15 +307,7 @@ body {
     line-height: 1.1;
   }
 }
-#video-container {
-  //box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
-  iframe {
-    max-width: 100%;
-    margin: 30px 0 51px;
-    border: 10px solid $trans-blue;
-  }
 
-}
 #video-container img {
   margin-top: 30px;
   margin-bottom:5px;
@@ -530,7 +519,8 @@ body {
 // Action Section
 
 .action-embed iframe {
-  height: 600px;
+  height: 580px;
+  padding-top: 20px;
 }
       
 // QUOTES

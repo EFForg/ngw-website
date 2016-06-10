@@ -27,7 +27,6 @@
     <title>No Global Warrants: Stop the Patriot Act's Mass Surveillance</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -47,7 +46,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#call">Take Action</a></li>
+            <li><a href="#take-action">Take Action</a></li>
             <li><a href="#background">Rule 41</a></li>
             <li><a href="#tweet">Tweet</a></li>
           </ul>
@@ -87,24 +86,86 @@
       </div>
     </div>
 
-    <div class="action-section green-bg">
+   <div id="take-action">
       <div class="container">
         <h1>Tell Congress:</h1>
         <h2>Please reject the update to Rule 41 of the Federal Rules of Criminal Procedure.</h2>
         <div class="row">
-          <div id="add-name" class="padding">
-            <h2>Add your name</h2>
-              <div class=action-embed>
-                <script type="text/javascript">
-                  var ac_embed = {};
-                  //ac_embed.no_css = true;
-                  //ac_embed.css = "https://owncloud.kickass.bike/core/skeleton/style.css";
-                </script>	
-                <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
-                <a id="action-center-widget" href="https://act.eff.org/action/dear-president-obama-stand-up-for-strong-security">Take part in the action!</a>
-              </div>
+          <div class="action-embed">
+              <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
+              <a id="action-center-widget" href="https://act.eff.org/action/dear-president-obama-stand-up-for-strong-security">Take part in the action!</a>
           </div>
-         
+    </div>
+
+<div id="petition">
+  <script type="text/javascript">
+       var ac_embed = {};
+       ac_embed.css_content = "#action_css";
+       ac_embed.international_only = true;
+  </script>
+  <script id="action_css" type="text/x-css-content">
+      body {
+        background-color: #08A013;
+        font-family: 'Lato';
+      }
+      #tools .tool {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        color: #fff;
+      }
+      .tool .form-control {
+        background: rgba(255,255,255,0.25);
+        color: #fff;
+        border-color: #fff;
+      }
+      #tools .tool .tool-heading .tool-title {
+        color: #fff;
+        text-transform: uppercase;
+      }
+      #progress-bar {
+        display: none;
+      }
+      a {
+        color: #08A013;
+      }
+      a:hover, a:active {
+        text-decoration: underline;
+        color: #08A013;
+      }
+      #tools .tool input[type=submit], #tools .tool button[type=submit] {
+        background: rgba(255,255,255,0.25);
+        border: 1px solid;
+      }
+      #tools .tool input[type=submit]:hover, #tools .tool button[type=submit]:hover {
+        background-color: #fff;
+        border-color: #fff;
+        color: #151515;
+        border-color: #fff;
+      }
+      label.small {
+        font-size: 90%;
+      }
+      #tools .tool select.form-control option {
+        background: rgba(255,255,255,0.25);
+        color: black;
+      }
+      .email-signup {
+        padding: 1em;
+        line-height: 1;
+        background-color: #fff;
+        color: #333;
+      }
+
+      #tools .tool .tool-heading .tool-title.signed {
+        color: #151515;
+      }
+      #tools ::-webkit-input-placeholder { color:#fff; }
+      #tools ::-moz-placeholder { color:#fff; }
+      #tools :-ms-input-placeholder { color:#fff; }
+      #tools input:-moz-placeholder { color:#fff; }
+
+  </script>
 
 <!--          <div id="call-script" class="col-sm-6 col-md-4 col-md-offset-2">
             <h5>What to say</h5>
@@ -153,7 +214,7 @@
 
           <p>The United States Congress never approved this new expansion of powers. But now Congress is our last change to stop this change from taking effect.
  
-          <p>Tell the U.S. Congress to reject the update to Rule 41. <a href="#call" style="color: #333; text-decoration: underline;">Sign our petition</a>. and join our day of action.</p>
+          <p>Tell the U.S. Congress to reject the update to Rule 41. <a href="#take-action" style="color: #333; text-decoration: underline;">Sign our petition</a>. and join our day of action.</p>
  
         </div>
       </div>
@@ -169,10 +230,10 @@ and lined with bloody death!"</p>
           </div>
           <div class="col-md-8 col-md-offset-4">
             <p>"Olaf(being to all intents
-a corpse and wanting any rag 
-upon what God unto him gave) 
-responds,without getting annoyed 
-“I will not kiss your fucking flag”"</p>
+            a corpse and wanting any rag 
+            upon what God unto him gave) 
+            responds,without getting annoyed 
+            “I will not kiss your fucking flag”"</p>
             <a href="javascript:return fasle;">e.e. cummings</a>
           </div>
           <div class="col-md-8">
@@ -285,13 +346,6 @@ responds,without getting annoyed
         <a href="https://www.eff.org/policy">Privacy</a>
       </div>
     </div>
-
-    <script>
-      // TODO: Update campaign name
-      var tforce_config = {
-        campaign: 'fight215'
-      };
-    </script>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
