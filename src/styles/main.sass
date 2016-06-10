@@ -1,0 +1,188 @@
+@import "../../bower_components/susy/sass/susy"
+
+
+// fonts
+@import "fonts.sass"
+
+// susy definitions
+
+$susy: 12 1/4 fluid float inside
+
+
+// breakpoints
+
+$xs: min-width 12em
+$sm: min-width 23em
+$md: min-width 34em
+$ph: min-width 48em
+$lg: min-width 66em
+$xl: min-width 80em
+
+// resets 
+
+div,p,a,li,td,span
+  -webkit-text-size-adjust: none
+
+// defaults
+
+body
+  font-size: 12px
+  font-family: 'Lato'
+  margin: 0
+  padding: 0
+
+// variables
+
+$header-height: 60px
+$blue: #007eff
+// code
+
+body // Move everything down to make room for banner
+  // &::before
+  //   content: ''
+  //   height: $header-height
+  //   display: block
+  +layout($susy)
+
+
+@mixin timer($string, $offset)
+  &::after
+    content: $string
+    position: absolute
+    margin-top: 2em
+    margin-left: $offset
+    font-size: 0.5em
+    color: #000
+
+#fight215-iframe
+  border: 0
+  outline: 0
+  width: 100%
+  height: $header-height
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 20000
+  background-color: transparent
+  overflow: none
+
+
+#fight215-banner
+
+
+  div:nth-of-type(1)
+    display: none
+    +susy-breakpoint($md)
+      +span(3)
+      display: block
+    +susy-breakpoint($lg)
+      +span(4)
+  div:nth-of-type(2)
+    +span(8)
+    +susy-breakpoint($md)
+      +span(6)
+    +susy-breakpoint($lg)
+      +span(4)
+  div:nth-of-type(3)
+    font-size: 0.75em
+    margin-top: 0.4em
+    +span(4)
+    +susy-breakpoint($md)
+      margin: 0
+      font-size: 1em
+      +span(3)
+    +susy-breakpoint($lg)
+      +span(4)
+
+
+  text-align: center 
+
+  div:nth-of-type(1)
+    text-align: right
+    img
+      width: 3em
+      height: auto
+      margin-top: 0.2em
+      margin-right: -1em
+
+
+
+
+  div:nth-of-type(2)
+    ul
+      text-align: center
+      margin: 0px
+      padding: 0
+      list-style-type: none
+      
+      li
+        display: inline
+        margin-right: 1em
+        color: #fff
+        &:nth-of-type(1)
+          +timer('days', -2.15em)
+        &:nth-of-type(2)
+          +timer('hours', -2.35em)
+        &:nth-of-type(3)
+          +timer('mins', -2.2em)
+        &:nth-of-type(4)
+          +timer('secs', -2.1em)
+
+      li:last-of-type
+        margin-right: 0
+
+    p
+      font-size: 0.5em
+      color: #fff
+
+  div:nth-of-type(3)
+    text-align: left
+
+    button
+      background: #fff
+      border: 0
+      outline: 0
+      border-radius: 12px
+      font-size: 0.6em
+      color: $blue
+      padding: 0.5em
+      text-transform: uppercase
+      font-weight: 700
+      letter-spacing: 0.05em
+      display: block
+      margin-top: 0.9em
+      margin-left: 0.5em
+      +susy-breakpoint($md)
+        margin-left: -1em
+
+      &:hover
+        cursor: pointer
+
+
+
+
+
+
+  position: absolute
+  top: 0
+  left: 0
+  height: $header-height
+  width: 100%
+  //background: url(//fight215.org/images/circuit-pattern-sm2.png) repeat
+  color: #000
+  background: $blue
+  z-index: 10000
+
+  text-align: center
+
+  font-size: 2em
+
+  transform: translate3d(0,-60px,0)
+  transition: all 0s linear
+  &:hover
+    cursor: pointer
+
+  
+  &.active
+    transform: translate3d(0,0,0)
+    transition: all 0.18s linear
