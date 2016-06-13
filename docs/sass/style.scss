@@ -13,7 +13,7 @@ $small: max-width 767px;
 @import 'social-buttons';
 @import 'breakpoint';
 
-$cone-size: 815;
+$cone-size: 42;
 
 /*
  * Globals
@@ -175,7 +175,7 @@ body {
    @include breakpoint($medium) {
     border-style: solid;
     border-color: transparent transparent $green transparent;
-    border-width: 0 #{$cone-size}px #{$cone-size}px #{$cone-size}px;
+    border-width: 0 #{$cone-size}vw #{$cone-size}vw #{$cone-size}vw;
     background-color: $dark-green;
     margin-bottom: -430px;
     }
