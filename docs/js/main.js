@@ -114,9 +114,9 @@ $(function(){
       }, 600);
     });
 
-    $('a[href="#call"]').click(function () {
+    $('a[href="#take-action"]').click(function () {
       $('html, body').animate({
-        scrollTop: $("#call").offset().top - 20
+        scrollTop: $("#take-action").offset().top - 20
       }, 600);
     });
 
