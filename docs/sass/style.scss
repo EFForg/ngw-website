@@ -177,7 +177,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-size}vw #{$cone-size}vw #{$cone-size}vw;
     background-color: $dark-green;
-    margin-bottom: -22vw;
+    margin-bottom: -20vw;
     }
     &::after {
   content: "";
@@ -225,7 +225,7 @@ body {
   }
 
   @include breakpoint($medium) {
-    padding: 20px;
+    padding: 25px;
     height: 80px;
   }
 
@@ -335,7 +335,7 @@ body {
   font-weight: 300;
   text-align: left;
   //box-shadow: 0px 0px 50px rgba(0,0,0,0.7);
-  margin-top:20px;
+  margin-top: 20px;
   box-sizing: border-box;
 
   h5 {
