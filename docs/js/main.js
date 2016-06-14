@@ -82,16 +82,16 @@ $(function(){
     };
 
     var tweets = [
-      "Please stop spying on innocent people everywhere under the Patriot Act.",
-      "Please end untargeted surveillance under the Patriot Act.",
-      "It's time to end the NSA's untargeted mass surveillance under the Patriot Act."
+      "Please reject the update to Rule 41 of the Federal Rules of Criminal Procedure.",
+      "Please reject the update to Rule 41 of the Federal Rules of Criminal Procedure.",
+      "Please reject the update to Rule 41 of the Federal Rules of Criminal Procedure."
     ];
 
     var targets = [
-      '@NancyPelosi ',
+      '@ChuckGrassley ',
       '@SenateMajLdr ',
       '@SenatorReid ',
-      '@SpeakerBoehner ',
+      '@RonWyden ',
     ];
 
     shuffle(tweets);
