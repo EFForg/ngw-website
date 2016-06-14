@@ -177,7 +177,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-size}vw #{$cone-size}vw #{$cone-size}vw;
     background-color: $dark-green;
-    margin-bottom: -430px;
+    margin-bottom: -22vw;
     }
     &::after {
   content: "";
@@ -490,6 +490,7 @@ body {
 .action-embed iframe {
   height: 580px;
   padding-top: 20px;
+  max-width: 100%;
 }
       
 // QUOTES
