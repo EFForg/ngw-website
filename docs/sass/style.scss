@@ -1,7 +1,7 @@
 $black: #151515;
 $blue: #007eff;
-$dark-green: #2E6614;
-$green: #92D32A; 
+$dark-green: #007012;
+$green: #8aeb00; 
 $white: #fcfcfc;
 
 $trans-blue: rgba(0,126,255,0.6);
@@ -13,7 +13,8 @@ $small: max-width 767px;
 @import 'social-buttons';
 @import 'breakpoint';
 
-$cone-size: 42;
+$cone-height: 42;
+$cone-angle: 32;
 
 /*
  * Globals
@@ -46,6 +47,21 @@ $cone-size: 42;
   src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/Lato-Italic.woff) format('woff');
 }
 
+/* Montserrat */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff) format('woff');
+}
+
 /* Links */
 a,
 a:focus,
@@ -69,7 +85,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: $green;  
+  background: $white;  
   font-family: 'Lato', sans-serif;
 }
 body {
@@ -98,6 +114,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  font-size: 0.9em
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
   color: $green;
@@ -119,23 +136,26 @@ body {
 // button
 
 
-%button {
+  %button, .button {
   text-decoration: none;
   font-weight: 400;
   font-family: 'Lato';
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 3px solid #{$dark-green};
   padding: 1em 0em 0.9em 0em;
   font-size: 1.2em;
-  border-radius: 4px;
+  font-weight: bold;
+  border-radius: 6px;
   margin-top: 2em;
   background-color: transparent;
   outline: 0;
   width: 84%;
+  color: $dark-green;
   &:hover {
-    background-color: rgba(255,255,255,1);
-    color: $black;
+    background-color: $dark-green;
+    border: 3px solid #{$dark-green};
+    color: $white;
   }
 }
 
@@ -148,9 +168,9 @@ body {
    @include breakpoint($medium) {
     border-style: solid;
     border-color: transparent transparent $green transparent;
-    border-width: 0 #{$cone-size}vw #{$cone-size}vw #{$cone-size}vw;
+    border-width: 0 #{$cone-height}vw #{$cone-angle}vw #{$cone-height}vw;
     background-color: $dark-green;
-    margin-bottom: -20vw;
+    margin-bottom: -14vw;
     }
     &::after {
   content: "";
@@ -168,7 +188,6 @@ body {
   width: 50%;
   position: absolute;
   left: 25%;
-  //max-width: 800px;
   max-width: 1200px;
   margin-top: 0px;
   -webkit-animation-duration: 0.5s;
@@ -198,8 +217,8 @@ body {
   }
 
   @include breakpoint($medium) {
-    padding: 25px;
-    height: 80px;
+    padding: 3em;
+    height: 0;
   }
 
   h2 {
@@ -262,7 +281,7 @@ body {
 }
 .btn-lg.btn-blue {
   background-color: $blue;
-  color: #fff;
+  color: $trans-blue;
   border-radius: 0;
   text-transform: uppercase;
   text-decoration: none;
@@ -401,25 +420,23 @@ body {
   input:-moz-placeholder { color:#fff; }
 
 }
-// .btn-lg.btn-black {
-//   background-color: #000;
-//   border-radius: 0;
-//   font-size: 25px;
-//   text-transform: uppercase;
-//   padding: 9px 24px;
-//     border: 1px solid #000;
-//   &:hover {
-//     color: #fff;
-//     border: 1px solid #fff;
-//   }
-// }
+
 /*
  * Background section
  */
 .background-section {
   padding-top: 30px;
   position: relative;
-
+  .action-button {
+    position: relative;
+    left: 5%;
+    padding: 30px 0 35px 0;
+    width: 50%;
+      a {
+        text-decoration: none;
+        padding: 15px;
+      }
+  }
   p {
     //color: #fff;
     color: #000;
@@ -436,30 +453,39 @@ body {
     margin-bottom:20px;
     font-weight: 300;
   }
-  // h1 {
-  //   color: $blue;
-  //   margin: 40px 0 20px 0;
-  // }
+
   h1, h2 {
     color: $black;
-    margin: 40px 0 20px 0;
     text-shadow: none;
-
+    font-family: Montserrat;
+    font-weight: bold;
   }
   h1 {
-    font-size: 36px;
-    text-align: left;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $dark-green;
   }
   h2 {
     margin-top: 1.4em;
     margin-bottom: 20px;
-    font-size: 1.8em;
+    font-size: 1em;
     text-align: left;
   }
 }
 
 // Action Section
-
+#take-action {
+  h1, h2 {
+    color: $black;
+    text-shadow: none;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}
 .action-embed iframe {
   height: 580px;
   padding-top: 20px;
