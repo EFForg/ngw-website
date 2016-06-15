@@ -144,7 +144,7 @@ body {
   text-transform: uppercase;
   border: 3px solid #{$dark-green};
   padding: 1em 0em 0.9em 0em;
-  font-size: 1.2em;
+  //font-size: 1.2em;
   font-weight: bold;
   border-radius: 6px;
   margin-top: 2em;
@@ -435,6 +435,9 @@ body {
       a {
         text-decoration: none;
         padding: 15px;
+          @include breakpoint($medium) {
+            font-size: 1.2em;
+          }
       }
   }
   p {
