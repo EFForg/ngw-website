@@ -429,7 +429,7 @@ body {
   position: relative;
   .action-button {
     position: relative;
-    left: 2.5%;
+    left: 4%;
     padding: 30px 0 70px 0;
     width: 50%;
     min-width: 14em;
@@ -469,6 +469,12 @@ body {
     text-transform: uppercase;
       @media (min-width: 992px) {
         color: $dark-green;
+      }
+      @include breakpoint($medium) {
+        padding: 2em 4em 1em 4em;
+          @media (min-width: 992px) {
+          padding: 0;
+          }
       }
   }
   h2 {
