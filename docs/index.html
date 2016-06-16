@@ -98,7 +98,7 @@
            ac_embed.non_us_option = 'petition';
       </script>
                 <script id="action_css" type="text/x-css-content">
-          body {
+          body,  body.action_page-embed_iframe {
             font-family: 'Lato';
             background-color: #fcfcfc;
           }
@@ -163,6 +163,18 @@
           #tools input:-moz-placeholder { color:#333333; }
           #tools {
             margin: 0;
+          }
+          
+          #tools #email-tool h3 span.customize-message-popover {
+            border: 1px solid #08A014;
+            color: #08A014;
+          }
+          #tools #email-tool h3 span.customize-message-popover:hover {
+            background-color: #08A013;
+          }
+          #tools #email-tool h3 em {
+            color: #333333;
+            font-family: 'Lato';
           }
     
       </script>
