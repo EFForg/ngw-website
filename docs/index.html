@@ -85,7 +85,7 @@
         <div class="row">
           <div class="action-embed">
               <script type="text/javascript" src="https://act.eff.org/action/embed"></script>
-              <a id="action-center-widget" href="https://act.eff.org/action/dear-president-obama-stand-up-for-strong-security">Take part in the action!</a>
+              <a id="action-center-widget" href="https://act.eff.org/action/noglobalwarrants-petition">Take part in the action!</a>
         </div>
       </div>
     </div>
@@ -95,6 +95,7 @@
            var ac_embed = {};
            ac_embed.css_content = "#action_css";
            ac_embed.international_only = true;
+           ac_embed.non_us_option = 'petition';
       </script>
     </div>
 
@@ -201,6 +202,9 @@
             box-shadow: none;
             background-color: transparent;          
           }
+          #petition-tool, #signatures {
+            display: none;
+          }
           .tool .form-control {
             background: rgba(255,255,255,0.25);
             border-color: #08A013;
@@ -252,6 +256,9 @@
           #tools ::-moz-placeholder { color:#333333; }
           #tools :-ms-input-placeholder { color:#333333; }
           #tools input:-moz-placeholder { color:#333333; }
+          #tools {
+            margin: 0;
+          }
     
       </script>
     <noscript>
