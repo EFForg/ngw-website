@@ -668,11 +668,10 @@ body {
   }
 
   a {
-    color: $blue;
+    color: #fff;
   }
   a:hover {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: underline;
   }
 
 }
