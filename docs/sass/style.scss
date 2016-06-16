@@ -14,7 +14,7 @@ $small: max-width 767px;
 @import 'breakpoint';
 
 $cone-height: 42;
-$cone-angle: 40;
+$cone-angle: 30;
 
 /*
  * Globals
@@ -185,10 +185,9 @@ body {
   }
 
  .jumbotron img {
-  width: 50%;
   position: absolute;
-  left: 25%;
-  max-width: 1200px;
+  left: 46em;
+  max-width: 22%;
   margin-top: 0px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
