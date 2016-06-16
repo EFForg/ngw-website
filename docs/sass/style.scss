@@ -429,7 +429,7 @@ body {
   position: relative;
   .action-button {
     position: relative;
-    left: 5%;
+    left: 2.5%;
     padding: 30px 0 70px 0;
     width: 50%;
     min-width: 14em;
@@ -467,7 +467,9 @@ body {
   h1 {
     font-size: 2em;
     text-transform: uppercase;
-    color: $dark-green;
+      @media (min-width: 992px) {
+        color: $dark-green;
+      }
   }
   h2 {
     margin-top: 1.4em;
