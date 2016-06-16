@@ -13,8 +13,8 @@ $small: max-width 767px;
 @import 'social-buttons';
 @import 'breakpoint';
 
-$cone-height: 42;
-$cone-angle: 30;
+$cone-height: 40;
+$cone-angle: 40;
 
 /*
  * Globals
@@ -170,7 +170,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-height}vw #{$cone-angle}vw #{$cone-height}vw;
     background-color: $dark-green;
-    margin-bottom: -10vw;
+    margin-bottom: -15em;
     }
     &::after {
   content: "";
@@ -186,8 +186,9 @@ body {
 
  .jumbotron img {
   position: absolute;
-  left: 46em;
-  max-width: 22%;
+  left: 35%;
+  right: 35%;
+  width: 30%;
   margin-top: 0px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -424,13 +425,14 @@ body {
  * Background section
  */
 .background-section {
-  padding-top: 0.8em;
+  padding-top: 3em;
   position: relative;
   .action-button {
     position: relative;
     left: 5%;
-    padding: 30px 0 45px 0;
+    padding: 30px 0 70px 0;
     width: 50%;
+    min-width: 14em;
       a {
         text-decoration: none;
         padding: 15px;
