@@ -542,6 +542,7 @@ body {
     }
     a {
       float: right;
+      color: $white;
       @include breakpoint($medium) {
         padding-right: 4em;
       }
