@@ -14,7 +14,7 @@ $small: max-width 767px;
 @import 'breakpoint';
 
 $cone-height: 40;
-$cone-angle: 40;
+$cone-angle: 57;
 
 /*
  * Globals
@@ -45,6 +45,13 @@ $cone-angle: 40;
   font-style: italic;
   font-weight: 400;
   src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/Lato-Italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/Lato-Black.woff) format('woff');
 }
 
 /* Montserrat */
@@ -109,12 +116,16 @@ body {
 .nav>li>a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  font-family: Montserrat;
+  font-weight: 700;
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.9em
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a {
   color: $green;
@@ -170,7 +181,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-height}vw #{$cone-angle}vw #{$cone-height}vw;
     background-color: $dark-green;
-    margin-bottom: -15em;
+    margin-bottom: -47em;
     }
     &::after {
   content: "";
@@ -424,13 +435,13 @@ body {
 /*
  * Background section
  */
-.background-section {
+.background-section, #take-action {
   padding-top: 3em;
   position: relative;
   .action-button {
     position: relative;
     left: 4%;
-    padding: 30px 0 70px 0;
+    padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
       a {
@@ -446,16 +457,17 @@ body {
     color: #000;
     font-style: normal;
     font-size: 14px;
-
-    @include breakpoint($medium) {
-      font-size: 1.2em;
-    }
+    font-weight: 400;
     text-align: left;
-    //text-shadow: 0px 0px 20px black;
     text-shadow: none;
     opacity: 1;
     margin-bottom:20px;
-    font-weight: 300;
+    @include breakpoint($medium) {
+      font-size: 1.5em;
+    }
+  }
+  b {
+    font-weight: 900;
   }
 
   h1, h2 {
@@ -487,6 +499,7 @@ body {
 
 // Action Section
 #take-action {
+  background: $green;s
   h1, h2 {
     color: $black;
     text-shadow: none;
@@ -496,6 +509,9 @@ body {
   h1 {
     font-size: 2em;
     text-transform: uppercase;
+    padding-top: 1.2em;
+    color: $dark-green;
+    left: -15px;
   }
 }
 .action-embed iframe {
@@ -632,7 +648,7 @@ body {
   padding: 80px 20px;
   background-color: #000;
   img {
-    width: 130px;
+    width: 200px;
     height: auto;
     padding: 1em;
       /*&:first-of-type {
