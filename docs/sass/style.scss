@@ -92,7 +92,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: $white;  
+  background: $dark-green;  
   font-family: 'Lato', sans-serif;
 }
 body {
@@ -181,7 +181,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-height}vw #{$cone-angle}vw #{$cone-height}vw;
     background-color: $dark-green;
-    margin-bottom: -47em;
+    margin-bottom: -30vw;
     }
     &::after {
   content: "";
@@ -438,9 +438,9 @@ body {
 .background-section, #take-action {
   padding-top: 3em;
   position: relative;
+  text-align: center;
   .action-button {
     position: relative;
-    left: 4%;
     padding: 50px 0 40px 0;
     width: 50%;
     min-width: 14em;
@@ -458,7 +458,7 @@ body {
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
-    text-align: left;
+
     text-shadow: none;
     opacity: 1;
     margin-bottom:20px;
@@ -671,6 +671,7 @@ body {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 0.08em;
+  
 
   img {
 
