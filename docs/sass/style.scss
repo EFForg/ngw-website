@@ -5,7 +5,7 @@ $green: #8aeb00;
 $white: #fcfcfc;
 
 $trans-blue: rgba(0,126,255,0.6);
-$footer-color: #017e00;
+$footer-color: #000;
 
 $medium: 768px;
 $small: max-width 767px;
@@ -14,7 +14,7 @@ $small: max-width 767px;
 @import 'breakpoint';
 
 $cone-height: 40;
-$cone-angle: 57;
+$cone-angle: 40;
 
 /*
  * Globals
@@ -73,7 +73,7 @@ $cone-angle: 57;
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: $dark-green;
 }
 
 /* Custom default button */
@@ -92,7 +92,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: $white;  
+  background: $green;  
   font-family: 'Lato', sans-serif;
 }
 body {
@@ -144,6 +144,10 @@ body {
   background: $green;
 }
 
+.white-bg {
+  background: $white;
+}
+
 // button
 
 
@@ -181,7 +185,7 @@ body {
     border-color: transparent transparent $green transparent;
     border-width: 0 #{$cone-height}vw #{$cone-angle}vw #{$cone-height}vw;
     background-color: $dark-green;
-    margin-bottom: -47em;
+    margin-bottom: -15vw;
     }
     &::after {
   content: "";
@@ -312,10 +316,10 @@ body {
     margin: 0;
   }
   h1 {
-    font-family: 'Lato';
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    color: $black;
+    text-shadow: none;
+    font-family: Montserrat;
+    font-weight: bold;
   }
   h2 {
     margin-bottom: 1em;
@@ -435,7 +439,7 @@ body {
 /*
  * Background section
  */
-.background-section, #take-action {
+.header-info, .background-section, .embed-howto, #take-action, {
   padding-top: 3em;
   position: relative;
   .action-button {
@@ -499,7 +503,7 @@ body {
 
 // Action Section
 #take-action {
-  background: $green;s
+  background: $white;
   h1, h2 {
     color: $black;
     text-shadow: none;
@@ -515,7 +519,7 @@ body {
   }
 }
 .action-embed iframe {
-  height: 600px;
+  height: 615px;
   padding-top: 20px;
   max-width: 100%;
 }
@@ -684,7 +688,7 @@ body {
   }
 
   a {
-    color: #fff;
+    color: #dark-green;
   }
   a:hover {
     text-decoration: underline;

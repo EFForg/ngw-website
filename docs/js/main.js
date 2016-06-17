@@ -116,7 +116,7 @@ $(function(){
 
     $('a[href="#take-action"]').click(function () {
       $('html, body').animate({
-        scrollTop: $("#take-action").offset().top - 35
+        scrollTop: $("#take-action").offset().top - 20
       }, 600);
     });
 
