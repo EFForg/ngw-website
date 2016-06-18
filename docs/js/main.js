@@ -108,15 +108,9 @@ $(function(){
       return false;
     });
 
-    $('a[href="#tweet"]').click(function () {
-      $('html, body').animate({
-        scrollTop: $("#tweet").offset().top - 30
-      }, 600);
-    });
-
     $('a[href="#take-action"]').click(function () {
       $('html, body').animate({
-        scrollTop: $("#take-action").offset().top - 20
+        scrollTop: $("#take-action").offset().top - 15
       }, 600);
     });
 
