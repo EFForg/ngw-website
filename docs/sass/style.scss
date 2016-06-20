@@ -69,6 +69,19 @@ $cone-angle: 40;
   src: local('Montserrat Black'), local('Montserrat-Black'), url(../fonts/Montserrat-Black.woff) format('woff');
 }
 
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.woff) format('woff');
+}
+
+
+
+
+
 /* Links */
 a,
 a:focus,
@@ -639,13 +652,6 @@ body {
 }
 
 
-.codeblock {
-  text-align: left !important;
-  pre {
-    text-align: left !important;
-  }
-}
-
 
 // logo section
 
@@ -742,4 +748,36 @@ body {
   .jumbotron .container h2 {
     padding: 0;
   }
+}
+
+
+//
+
+.navbar-brand, .navbar .nav li a {
+  font-weight: 700 !important;
+  font-family: 'Montserrat';
+}
+
+.header-tag h1 {
+  font-weight: 900;
+}
+
+.action-button p a.button {
+  font-size: 16px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 20px;
+}
+
+
+.codeblock {
+  text-align: left !important;
+  pre {
+    text-align: left !important;
+  }
+  padding-bottom: 60px;
+}
+
+.header-info {
+  padding-bottom: 60px;
 }

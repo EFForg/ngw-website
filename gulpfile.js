@@ -72,7 +72,7 @@ gulp.task('serve', function() {
 
 
 gulp.task('default', function() {
-    gulp.start('serve', 'styles', 'scripts', 'templates', 'watch');
+    gulp.start('serve', 'styles', 'scripts', 'templates');
 });
  
 gulp.task('watch', function() {
