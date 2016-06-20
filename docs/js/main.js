@@ -114,6 +114,15 @@ $(function(){
       }, 600);
     });
 
+
+
+    $('a[href="#embed-howto"]').click(function () {
+      $('html, body').animate({
+        scrollTop: $("#embed-howto").offset().top - 15
+      }, 600);
+    });
+
+
     $('a[href="#background"]').click(function () {
       $('html, body').animate({
         scrollTop: $("#background").offset().top - 20

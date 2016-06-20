@@ -329,10 +329,10 @@ body {
     margin: 0;
   }
   h1 {
-    color: $black;
+    color: $dark-green;
     text-shadow: none;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: 900;
   }
   h2 {
     margin-bottom: 1em;
@@ -488,10 +488,10 @@ body {
   }
 
   h1, h2 {
-    color: $black;
+    color: $dark-green;
     text-shadow: none;
     font-family: Montserrat;
-    font-weight: bold;
+    font-weight: 900;
   }
   h1 {
     font-size: 2em;
@@ -518,7 +518,7 @@ body {
 #take-action {
   background: $white;
   h1, h2 {
-    color: $black;
+    color: $dark-green;
     text-shadow: none;
     font-family: Montserrat;
     font-weight: bold;
@@ -753,6 +753,10 @@ body {
 
 //
 
+.jumbotron {
+
+}
+
 .navbar-brand, .navbar .nav li a {
   font-weight: 700 !important;
   font-family: 'Montserrat';
@@ -766,7 +770,7 @@ body {
   font-size: 16px !important;
   padding-left: 50px;
   padding-right: 50px;
-  margin-left: 20px;
+  min-width: 270px;
 }
 
 
@@ -801,3 +805,30 @@ div a {
   }
 }
 
+.header-info {
+  padding-top: 140px !important;
+}
+
+#header-info p a {
+  font-weight: bold;
+}
+
+// .action-button, .button {
+//   min-width: 260px !important;
+// }
+.action-button {
+  min-width: 270px !important;
+  margin: 0 auto !important;
+}
+
+.jumbotron img {
+  width: 40% !important;
+  left: 30% !important;
+  right: 30% !important;
+  margin-bottom: 10% !important;
+}
+
+.small-large-header-non-semantic-css {
+  max-width: 200px !important;
+  margin: 0 auto !important;
+}

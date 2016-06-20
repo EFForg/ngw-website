@@ -66,17 +66,17 @@ gulp.task('serve', function() {
 
     var server = gls.static('docs', 8641);
     server.start();
-    gulp.watch(['docs/**']).on('change', server.notify);
+    // gulp.watch(['docs/**']).on('change', server.notify);
 
 });
 
 
 gulp.task('default', function() {
-    gulp.start('serve', 'styles', 'scripts', 'templates');
+    gulp.start('serve', ['styles', 'scripts', 'templates', 'watch']);
 });
  
 gulp.task('watch', function() {
-
+  gulp.watch('docs/sass/**/*.scss,' ['styles']);
   gulp.watch('src/styles/**/*.scss', ['styles']);
   gulp.watch('src/scripts/**/*.js', ['scripts']);
   gulp.watch('src/templates/**/*.jade', ['templates']);
