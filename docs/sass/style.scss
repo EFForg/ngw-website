@@ -779,5 +779,21 @@ body {
 }
 
 .header-info {
+  
+}
+
+h1 {
+  font-weight: 900 !important;
+}
+
+.background-section {
   padding-bottom: 60px;
+}
+
+.quote-section {
+  h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 900;
+  }
 }
