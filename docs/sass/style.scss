@@ -779,7 +779,7 @@ body {
 }
 
 .header-info {
-  
+  padding-bottom: 60px;
 }
 
 h1 {
@@ -796,4 +796,8 @@ h1 {
     font-family: 'Montserrat';
     font-weight: 900;
   }
+div a {
+    color: #233d23 !important;
+  }
 }
+
