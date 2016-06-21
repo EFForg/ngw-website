@@ -821,6 +821,12 @@ div a {
   margin: 0 auto !important;
 }
 
+@media(min-width: 768px) {
+  .action-button {
+    margin-left: 5%;
+  }
+}
+
 .jumbotron img {
   width: 40% !important;
   left: 30% !important;
