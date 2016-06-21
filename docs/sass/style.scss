@@ -821,17 +821,25 @@ div a {
   margin: 0 auto !important;
 }
 
-@media(min-width: 768px) {
-  .action-button {
-    margin-left: 5%;
-  }
-}
+// @media(min-width: 768px) {
+//   .action-button {
+//     margin-left: 5%;
+//   }
+// }
 
 .jumbotron img {
   width: 40% !important;
   left: 30% !important;
   right: 30% !important;
   margin-bottom: 10% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  min-width: 190px !important;
+  @media(max-width:767px) {
+    width: 80% !important;
+    left: 20% !important;
+    right: 20% !important;
+  }
 }
 
 .small-large-header-non-semantic-css {
